@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'fullpage.js/vendors/scrolloverflow'
+import 'fullpage.js/dist/fullpage.min.css'
+// import './fullpage.scrollHorizontally.min'
+import VueFullPage from 'vue-fullpage.js'
 
 Vue.config.productionTip = false
-
+Vue.use(VueFullPage)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
