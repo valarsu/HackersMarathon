@@ -23,10 +23,10 @@ export default {
   position absolute
   z-index 1000
   top 0
-  left 67%
-  bottom 0px
-  width 27%
-  height 100vh
+  right 30px
+  bottom 0
+  width 408px
+  height 895px
   padding 1vh 0
 .phone-container
   width 100%
@@ -36,11 +36,11 @@ export default {
   background-repeat no-repeat
 .project-container
   position relative
-  width 90%
-  height 77%
+  width 375px
+  height 667px
   overflow auto
   top 10%
-  left 5%
+  left 18px
   background #ffffff
   border-radius 1%
 </style>
