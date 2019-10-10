@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="page-container">
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <h1>第一页</h1>
@@ -17,10 +17,12 @@
         <h1>{{ msg }}</h1>
       </div>
     </full-page>
+    <mobile-demo></mobile-demo>
   </div>
 </template>
 
 <script>
+import MobileDemo from '../fragment/mobileDemo.vue'
 export default {
   name: 'index',
   data () {
@@ -32,10 +34,14 @@ export default {
         sectionsColor: '#fff'
       }
     }
+  },
+  components: {
+    MobileDemo
   }
 }
 </script>
 
-<style scoped>
-
+<style lang="stylus" scoped>
+.page-container
+  position absolute
 </style>
