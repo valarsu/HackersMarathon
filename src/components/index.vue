@@ -12,12 +12,10 @@
         <h1>第二页</h1>
         <h1>{{ msg }}</h1>
       </div>
-      <div class="section">
-        <h1>第三页</h1>
-        <h1>{{ msg }}</h1>
-      </div>
     </full-page>
-    <mobile-demo></mobile-demo>
+    <mobile-demo>
+      <router-view></router-view>
+    </mobile-demo>
   </div>
 </template>
 
@@ -30,7 +28,7 @@ export default {
       msg: 'A project that includes a video streaming and queuing system',
       options: {
         licenseKey: 'YOUR_KEY_HEERE',
-        anchors: ['', 'page2', 'page3'],
+        anchors: ['/list', '/detail'],
         sectionsColor: '#fff'
       }
     }

@@ -2,7 +2,7 @@
   <div class="demo-container">
     <div class="phone-container">
       <div class="project-container">
-        手机内部显示<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>手机内部显示<br/>手机内部显示<br/>手机内部显示<br/>手机内部显示<br/>手机内部显示<br/>
+        <slot></slot>
       </div>
     </div>
   </div>
